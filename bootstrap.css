@@ -1,0 +1,13 @@
+.nav-item{
+    background-color: #5e76e0 !important;
+    color: whitesmoke !important;
+    
+    border-radius: 0px !important;    
+    margin: 0px 0.5px !important;
+}
+
+.nav-item li, a.active {
+    background-color: #293361 !important;
+    color: whitesmoke !important;
+}
+

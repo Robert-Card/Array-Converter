@@ -1,0 +1,153 @@
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8489a0bb;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+
+    padding: 12px;
+    margin: 1px;
+    background-color: #293361;
+    pointer-events: none;
+    font-variant: small-caps;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: #293361;
+    text-align: center;
+    color: gainsboro;
+    width: 100%;
+    left: 0%;
+    font-size: small;
+}
+
+#genLabel{
+    
+    color: #0c0c0c;
+    font-weight: 600;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: #7499f09d;
+    border: ridge 1px #0c0c0c;
+    padding: 9.1px;
+}
+
+#gen{        
+    width: 40rem;
+    border: ridge 1px #0c0c0c;
+    min-height: 300px;
+    max-height: 600px;
+    margin-top: 0px;
+}
+
+#socialMedias{
+    padding-top: 15px;
+    background-color: #a4a8b9;
+    gap: 10px;
+}
+
+#space{
+    background-color: #a4a8b9 !important;
+    height: 10px;
+    text-align: center;
+}
+
+.btnStyle{    
+    display: flex;
+          
+
+    background-color: #7499f09d;
+    border: ridge 1px #0c0c0c;
+}
+
+.btnStyle2{    
+    display: flex;       
+    
+
+    background-color: #ffffff9d;
+    border: ridge 1px #0c0c0c;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px 5px;    
+}
+
+.about{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 550;
+    
+}
+
+.about2{
+    text-align: center;
+    margin-top: 0px;
+    
+    font-family: monospace;
+    font-size: large;
+    font-weight: 1000;
+    
+}
+
+
+
+
+
+/*IMGs*/
+
+#trashcan{
+    content: url(img/trash.png);
+    height: 25px;    
+}
+
+#arrowL{
+    content: url(img/arrow.png);
+    height: 25px;
+}
+
+#arrowR{
+    content: url(img/arrow.png);
+    height: 25px;
+    transform: rotateY(180deg);
+}
+
+#github{
+    content: url(img/github.png);
+    height: 64px;    
+}
+
+#linkedin{
+    content: url(img/linkedin.png);
+    height: 64px;    
+}
+
+
+/*MediaQuerries*/
+
+@media only screen and (max-width: 769px){
+
+    body, html{
+        margin-top: 4px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+}

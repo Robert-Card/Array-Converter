@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Array Converter</title>
+
+        <!-- Bootstrap - CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Import Script & CSS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <header>Simple Array Converter</header>
+
+        
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Home</a>
+                <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Converter</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">About</a>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+
+            <!--Home-->
+            <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                This section is a work in progress...
+            
+            </div>
+
+            <!--Generator-->
+            <div class="tab-pane fade  show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+                <div class="input-group mb-1 justify-content-center">
+                    <label id="genLabel" for="gen">Write here your arrays separated only by a space. Example: <i>Apple Banana Grape.</i></label>
+                </div>
+
+                <div class="input-group mb-2 justify-content-center">
+                    <textarea id="gen" placeholder="" aria-label="generator" aria-describedby="basic-addon2"></textarea>                        
+                </div>
+
+                <div class="input-group pb-2 justify-content-center btns">
+                    <button class="btn btnStyle2" type="button" onmouseup="Clear()"> <img id="trashcan" alt="Clear"> </button>
+                    <button class="btn btnStyle2" type="button" onmouseup="Undo()"> <img id="arrowL" alt="Undo"> </button>
+                    <button class="btn btnStyle2" type="button" onmouseup="Redo()"> <img id="arrowR" alt="Redo"> </button>
+                    
+                    <span style="margin: 0px 5px;"></span>
+
+                    <button class="btn btnStyle" type="submit" onmouseup="Copy()"><b>Copy</b></button>
+                    <button class="btn btnStyle" type="submit" onmouseup="Transform()"><b>Transform</b></button>
+                </div>
+            
+            </div>
+
+            <!--About-->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                
+                <hr><div class="about">
+                   <u> &#8618; Site created for learning purposes, non-profit or third-party content! &#8617; </u>
+                </div><hr>
+
+                    <div id="space"></div>
+                    
+                <div class="about2 pt-4">
+                    Future updates will come, and new features may be added, <br>
+                    to keep up with this work and others, follow my social networks below:
+                </div><br>
+
+                <div id="socialMedias" class="input-group justify-content-center">
+                    <button class="btn btnStyle2" type="button"> <a id="github" class="rounded float-left" alt="Github" href="https://github.com/RobertCard" target="_blank"></a> </button>
+                    <button class="btn btnStyle2" type="button"> <a id="linkedin" class="rounded float-left" alt="LinkedIn" href="https://www.linkedin.com/in/robertleandroc" target="_blank"></a> </button>                   
+                </div>
+
+                <div id="space"><b>robertleandroc@gmail.com</b></div>
+                
+            
+            </div>
+
+        </div>
+        
+
+
+        <footer>By: <a href="https://www.linkedin.com/in/robertleandroc/" target="_blank" class="nobg">Robert Leandro Cardoso</a> | 2021 ~ <script>document.write(year)</script></footer>
+        
+        <!--Bootstrap - Script-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

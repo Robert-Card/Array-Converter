@@ -29,20 +29,21 @@ function Transform() {
 
     }else{
 
+        //Split Arrays
         let userText = document.getElementById("gen").value;
-        let splits = userText.split(" ");
-        console.log(splits);    
+        let splits = userText.split(" ");        
+
+        //Transform
         document.getElementById("gen").value="[ "; 
-        
-        for(position = 0; position < splits.length; position++){          
-
-            document.getElementById("gen").value+='"'+splits[position]+'"';
-
-                if(position < splits.length - 1){
-                    document.getElementById("gen").value+=", ";
-                }
-        }
+        splits.forEach(Divide); 
         document.getElementById("gen").value+=" ]";
     }
 }
 
+function Divide(item, index, array){
+    document.getElementById("gen").value+=item
+    
+    if(index !== array.length -1){
+    document.getElementById("gen").value+=", ";
+    }
+}

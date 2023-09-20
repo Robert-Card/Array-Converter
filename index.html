@@ -17,7 +17,6 @@
     </head>
     <body>
         <header>Simple Array Converter</header>
-
         
         <nav>
             <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
@@ -39,23 +38,25 @@
             <!--Generator-->
             <div class="tab-pane fade  show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 
-                <div class="input-group mb-1 justify-content-center">
-                    <label id="genLabel" for="gen">Write here your arrays separated only by a space. Example: <i>Apple Banana Grape.</i></label>
-                </div>
+                <div class="max-w">
+                    <div class="input-group mb-1 justify-content-center">
+                        <label id="genLabel" for="gen">Write here your words separated only by a space. "Example: <i>Apple Banana Grape." then, press Transform!</i></label>
+                    </div>
 
-                <div class="input-group mb-2 justify-content-center">
-                    <textarea id="gen" placeholder="" aria-label="generator" aria-describedby="basic-addon2"></textarea>                        
-                </div>
+                    <div class="input-group mb-2 justify-content-center">
+                        <textarea id="gen" placeholder="" aria-label="generator" aria-describedby="basic-addon2"></textarea>                        
+                    </div>
 
-                <div class="input-group pb-2 justify-content-center btns">
-                    <button class="btn btnStyle2" type="button" onmouseup="Clear()"> <img id="trashcan" alt="Clear"> </button>
-                    <button class="btn btnStyle2" type="button" onmouseup="Undo()"> <img id="arrowL" alt="Undo"> </button>
-                    <button class="btn btnStyle2" type="button" onmouseup="Redo()"> <img id="arrowR" alt="Redo"> </button>
-                    
-                    <span style="margin: 0px 5px;"></span>
+                    <div class="input-group pb-2 justify-content-center btns">
+                        <button class="btn btnStyle2" type="button" onmouseup="Clear()"> <img id="trashcan" alt="Clear"> </button>
+                        <button class="btn btnStyle2" type="button" onmouseup="Undo()"> <img id="arrowL" alt="Undo"> </button>
+                        <button class="btn btnStyle2" type="button" onmouseup="Redo()"> <img id="arrowR" alt="Redo"> </button>
+                        
+                        <span style="margin: 0px 5px;"></span>
 
-                    <button class="btn btnStyle" type="submit" onmouseup="Copy()"><b>Copy</b></button>
-                    <button class="btn btnStyle" type="submit" onmouseup="Transform()"><b>Transform</b></button>
+                        <button class="btn btnStyle" type="submit" onmouseup="Copy()"><b>Copy</b></button>
+                        <button class="btn btnStyle" type="submit" onmouseup="Transform()"><b>Transform</b></button>
+                    </div>
                 </div>
             
             </div>
@@ -86,7 +87,7 @@
 
         </div>
         
-
+        <div id="notification" class="hidden">Copied!</div>
 
         <footer>By: <a href="https://www.linkedin.com/in/robertleandroc/" target="_blank" class="nobg">Robert Leandro Cardoso</a> | 2021 ~ <script>document.write(year)</script></footer>
         
